@@ -68,3 +68,6 @@ docker-compose down
 
 ## Authentication
 For information on authentication and authorization mechanisms, see `docs/authentication.md`.
+
+## A guide for Heroku deployment
+https://medium.com/@farad.dev/how-to-deploy-a-django-application-on-heroku-step-by-step-guide-6ac6ea9a9098
