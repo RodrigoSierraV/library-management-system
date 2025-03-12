@@ -1,0 +1,50 @@
+[
+    {
+        "model": "books.book",
+        "pk": 1,
+        "fields": {
+            "title": "Book One",
+            "author": "Author One",
+            "isbn": "1234567890",
+            "published_date": "2020-01-01",
+            "page_count": 100,
+            "available": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 2,
+        "fields": {
+            "title": "Book Two",
+            "author": "Author Two",
+            "isbn": "0987654321",
+            "published_date": "2021-01-01",
+            "page_count": 200,
+            "available": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 3,
+        "fields": {
+            "title": "Book Three",
+            "author": "Author Three",
+            "isbn": "0987654322",
+            "published_date": "2021-01-01",
+            "page_count": 200,
+            "available": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 4,
+        "fields": {
+            "title": "Book Four",
+            "author": "Author Four",
+            "isbn": "0987654323",
+            "published_date": "2021-01-01",
+            "page_count": 200,
+            "available": true
+        }
+    }
+]

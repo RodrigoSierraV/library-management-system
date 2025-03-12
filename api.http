@@ -1,0 +1,55 @@
+### User Registration
+POST http://localhost:8000/api/v1/users/register/
+Content-Type: application/json
+
+{
+  "username": "test2",
+  "email": "test2@example.com",
+  "password": "password",
+  "first_name": "test2",
+  "last_name": "User"
+}
+
+### Login
+# @name login
+POST http://localhost:8000/api/v1/token/
+Content-Type: application/json
+
+{
+  "username": "test1",
+  "password": "password"
+}
+
+
+### store token
+@token = {{login.response.body.access}}
+
+### List Books (Open to Public)
+GET http://localhost:8000/api/v1/books/
+
+### List Books Filter books by title (Open to Public)
+GET http://localhost:8000/api/v1/books/?title=Book%20One
+
+### List Books Filter books by author (Open to Public)
+GET http://localhost:8000/api/v1/books/?author=Author%20Two
+
+### List Books Filter books by availability (Open to Public)
+GET http://localhost:8000/api/v1/books/?available=True
+
+### Borrow a Book (Requires Bearer Token)
+POST http://localhost:8000/api/v1/loans/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "book_id": 4
+}
+
+### Return a Book (Requires Bearer Token)
+PATCH http://localhost:8000/api/v1/loans/return/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "book_id": 4
+}
