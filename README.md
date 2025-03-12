@@ -17,7 +17,7 @@ The Library Management System is a Django-based application designed to manage l
 ## Installation
 1. Clone the repository:
    ```
-   git clone <repository-url>
+   git clone https://github.com/RodrigoSierraV/library-management-system.git
    cd library-management-system
    ```
 2. **Build the Docker Image**
